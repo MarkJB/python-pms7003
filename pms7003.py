@@ -16,9 +16,9 @@ The sensor payload is 32 bytes:
 
 2 fixed start bytes (0x42 and 0x4d)
 2 bytes for frame length
-6 bytes for standard concentrations in ug/m3
-6 bytes for atmospheric concentrations in ug/m3
-12 bytes for counts per 0.1 litre
+6 bytes for standard concentrations in ug/m3 (3 measurements of 2 bytes each)
+6 bytes for atmospheric concentrations in ug/m3 (3 measurements of 2 bytes each)
+12 bytes for counts per 0.1 litre (6 measurements of 2 bytes each)
 1 byte for version
 1 byte for error codes
 2 bytes for checksum
