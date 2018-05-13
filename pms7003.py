@@ -2,6 +2,8 @@
 
 A simple script to test the Plantower PMS7003 serial particulate sensor.
 
+English datasheet: https://www.pdf-archive.com/2017/04/12/plantower-pms-7003-sensor-data-sheet/plantower-pms-7003-sensor-data-sheet.pdf
+
 Outputs the various readings to the console.
 
 Requires PySerial.
