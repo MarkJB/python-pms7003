@@ -89,9 +89,7 @@ while True:
             payloadChecksum = data[29] + (data[28] << 8)
 
             # Calculate the payload checksum (not including the payload checksum bytes)
-            inputChecksum = 0x42 + 0x4d
-            for x in range(0, 27):
-                inputChecksum = inputChecksum + data[x]
+            inputChecksum = 0x42 + 0x4d + sum(data[:-2])
 
             # Clear the screen before displaying the next set of data
             os.system('cls')  # Set to 'cls' on Windows, 'clear' on linux
